@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+body {
+  background-color: rgb(60, 60, 60);
+  color: #0D2E60;
+
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+h3 {
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+select.form-select {
+  background-color: #F7F9FC;
+  border: none;
+}
+
+@media (min-width: 1440px) {
+  .modal-xl {
+      max-width: 1270px;
+  }
+}
+
+.container {
+    height: 200px;
+    position: relative;
+  }
+  
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-content {
+  border-radius: 1rem;
+  flex-direction: row;
+}
+
+.text-muted {
+  color: #77869F;
+}
+.text-aside {
+  color: #77869F;
+  font-style: italic;
+}
+.text-big {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.text-blue {
+  color: #00A5EA;
+}
+
+.badge-gain {
+  padding: 4px 12px;
+  background-color: #E6F9F5 !important;
+  color: #40C8B7;
+  line-height: 1.2 !important;
+  font-weight: normal;
+}
+
+.btn-muted {
+  color: #77869F;
+}
+.btn-outline-primary {
+  border-color: #00A5EA;
+  color: #00A5EA;
+}
+.btn-outline-primary:hover {
+  background-color: #00A5EA;
+}
