@@ -15,7 +15,6 @@
   width: 32px;
 }
 
-
 .wrapper {  
   display: flex;
   align-items: stretch;
@@ -61,12 +60,23 @@
     margin-bottom: 24px;
     font-size: .9em;
   }
+    .side-performance-item {
+      display: flex;
+      align-items: stretch;
+    }
+      .side-performance-item-label {
+        flex-grow: 1;
+        justify-content: flex-start;
+      }
+      .side-performance-item-value {
+        justify-content: flex-end;
+      }
 
   .side .side-tip {
     margin-bottom: 24px;
   }
     .side .side-tip button {
-      width: 90%;
+      width: 95%;
     }
 
 .main {
@@ -140,7 +150,7 @@
           flex-grow: 1;
         }
         .main-chart .main-chart-box .main-chart-box-section-tools .main-chart-box-section-tools-column2 {
-          flex-grow: 3;
+          flex-grow: 6;
           display: flex;
           flex-direction: row;
           justify-content: flex-end;
@@ -151,13 +161,23 @@
         flex-direction: row;
         font-size: .8rem;
       }
-      .main-chart .main-chart-box .main-chart-box-section-chart-column1 {
-        justify-content: flex-start;
-      }
-        .main-chart .main-chart-box .main-chart-box-section-chart-column1 > div {
-          margin-bottom: 8px;
+        .main-chart .main-chart-box .main-chart-box-section-chart-column1 {
+          flex-grow: 1;
+          justify-content: flex-start;
         }
-
+          .main-chart .main-chart-box .main-chart-box-section-chart-column1 > div {
+            margin-bottom: 8px;
+          }
+        .main-chart .main-chart-box .main-chart-box-section-chart-column2 {
+          justify-content: flex-end;
+        }
+          .main-chart-box-section-chart-column2-chart {
+            justify-content: flex-end;
+          }
+            .main-chart-box-section-chart-column2-chart .highcharts-container {
+              margin-right: -158px;
+            }
+            
       .main-chart .main-chart-box .main-chart-box-section-details {
         display: flex;
         flex-direction: row;

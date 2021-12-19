@@ -19,14 +19,24 @@
     <div class="side-performance">
       <h6>Past Performance with IRBT</h6>
       <hr>
-      <div class="text-muted">
-        <fa-icon [icon]="faAward"></fa-icon>&nbsp;&nbsp;
-        <span>Win rate</span>
+      <div class="side-performance-item">
+        <div class="side-performance-item-label text-muted">
+          <fa-icon [icon]="faAward"></fa-icon>&nbsp;&nbsp;
+          <span>Win rate</span>
+        </div>
+        <div class="side-performance-item-value font-weight-bold">
+          42%
+        </div>
       </div>
       <hr>
-      <div class="text-muted">
-        <fa-icon [icon]="faBalanceScale"></fa-icon>&nbsp;
-        <span>Average trade R/R</span>
+      <div class="side-performance-item">
+        <div class="side-performance-item-label text-muted">
+          <fa-icon [icon]="faBalanceScale"></fa-icon>&nbsp;
+          <span>Average trade R/R</span>
+        </div>
+        <div class="side-performance-item-value font-weight-bold">
+          .32
+        </div>
       </div>
     </div>
 
@@ -129,7 +139,7 @@
               <div>
                 <div class="text-muted" style="margin-bottom: 6px;">Trade entry time</div>
                 <div>
-                  <span class="text-big">8:49 am</span>&nbsp;&nbsp;&nbsp;
+                  <span class="text-big">8:49 am</span>&nbsp;&nbsp;
                   <span class="text-aside">2 hours ago</span>
                 </div>
               </div>
@@ -142,44 +152,58 @@
               </div>
             </div>
             <div class="main-chart-box-section-chart-column2">
-
+              <highcharts-chart [Highcharts]="Highcharts" [options]="chartOptions"
+                class="main-chart-box-section-chart-column2-chart" style="width: 100%; height: 300px; display: block;">
+              </highcharts-chart>
             </div>
           </div>
           <div class="main-chart-box-section main-chart-box-section-details">
-            <div class="main-chart-box-section-details-column">
+            <div class="main-chart-box-section-details-column" style="margin-right: 16px;">
               <h6>Trade details</h6>
               <hr>
-              <div class="text-muted">
-                <fa-icon [icon]="faBullseye"></fa-icon>&nbsp;&nbsp;
-                <span>Price target</span>
+              <div>
+                <span class="text-muted">
+                  <fa-icon [icon]="faBullseye"></fa-icon>&nbsp;&nbsp;Price target
+                </span>
+                <span class="font-weight-bold" style="float: right;">$89.20</span>
               </div>
               <hr>
-              <div class="text-muted">
-                <fa-icon [icon]="faStopCircle"></fa-icon>&nbsp;&nbsp;
-                <span>Stop loss</span>
+              <div>
+                <span class="text-muted">
+                  <fa-icon [icon]="faStopCircle"></fa-icon>&nbsp;&nbsp;Stop loss
+                </span>
+                <span class="font-weight-bold" style="float: right;">$78.48</span>
               </div>
               <hr>
-              <div class="text-muted">
-                <fa-icon [icon]="faBalanceScale"></fa-icon>&nbsp;&nbsp;
-                <span>Original trade R/R</span>
+              <div>
+                <span class="text-muted">
+                  <fa-icon [icon]="faBalanceScale"></fa-icon>&nbsp;&nbsp;Original trade R/R
+                </span>
+                <span class="font-weight-bold" style="float: right;">.2</span>
               </div>
             </div>
-            <div class="main-chart-box-section-details-column" style="margin-left: 8px;">
+            <div class="main-chart-box-section-details-column" style="padding-left: 16px;">
               <h6>Options' metrics</h6>
               <hr>
-              <div class="text-muted">
-                <fa-icon [icon]="faChartPie"></fa-icon>&nbsp;&nbsp;
-                <span>Stock float</span>
+              <div>
+                <span class="text-muted">
+                  <fa-icon [icon]="faChartPie"></fa-icon>&nbsp;&nbsp;Stock float
+                </span>
+                <span class="font-weight-bold" style="float: right; color: inherit;">37%</span>
               </div>
               <hr>
-              <div class="text-muted">
-                <fa-icon [icon]="faFlask"></fa-icon>&nbsp;&nbsp;
-                <span>$ volume / MCAP</span>
+              <div>
+                <span class="text-muted">
+                  <fa-icon [icon]="faFlask"></fa-icon>&nbsp;&nbsp;$ volume / MCAP
+                </span>
+                <span class="font-weight-bold" style="float: right;">37%</span>
               </div>
               <hr>
-              <div class="text-muted">
-                <fa-icon [icon]="faTag"></fa-icon>&nbsp;&nbsp;
-                <span>% above or below VWAP</span>
+              <div>
+                <span class="text-muted">
+                  <fa-icon [icon]="faTag"></fa-icon>&nbsp;&nbsp;% above or below VWAP
+                </span>
+                <span class="font-weight-bold" style="float: right;">37%</span>
               </div>
             </div>
           </div>
